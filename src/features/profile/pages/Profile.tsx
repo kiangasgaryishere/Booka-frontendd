@@ -15,7 +15,7 @@ interface ProfilePageProps {
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
   const { user, logout } = useAuth();
-  const { selectedAvatar } = useAvatar();
+  const {} = useAvatar();
   const navigate = useNavigate();
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
   const [showAvatarSelector, setShowAvatarSelector] = useState(false);
